@@ -1,0 +1,155 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#answer-label{
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+#theAnswer{
+  font-size: 1.25em;
+  background-color: yellow;
+}
+
+#theAnswer.filled{
+  background-color: white;
+}
+
+.form-container{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px black solid;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  
+}
+
+.form-container.correct-answer{
+  box-shadow: 0px 0px 5px 5px rgb(57,254,57);
+}
+
+.form-container.wrong-answer{
+  box-shadow: 0px 0px 5px 5px rgb(255,190,190);
+}
+
+.result{
+  visibility: hidden;
+  font-size: 1.5em;
+  font-weight: 600;
+  display:none;
+}
+
+.result.correct-answer{
+  color: rgb(87, 254, 87);
+  text-shadow: 0px 0px 10px rgb(190,255,190);
+  display:unset;
+  visibility: visible;
+}
+
+.result.wrong-answer{
+  color: rgb(255, 50, 50);
+  text-shadow: rgb(255, 190, 190) 0px 0px 5px ;
+  display:unset;
+  visibility: visible;
+}
+
+.answer-string{
+  height:40px;
+}
+
+.submit-answer{
+  width: 140px;
+  height: 30px;
+  font-size: 1 em;
+  font-weight: bold;
+  margin-left: 10px;
+  background-color: rgb(0, 50, 151);
+  color: white;
+  cursor: pointer;
+}
+
+/* Card rotation */
+:root{
+  --card-border-radius: 40px;
+}
+
+.flip-card {
+  margin: auto;
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  border-radius: var(--card-border-radius);
+  border: 3px solid rgb(0,0,0);
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card:hover{
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner {
+  transform: rotateX(0deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgb(255, 197, 238);
+  border-radius: var(--card-border-radius);
+  color: black;
+  font-size: 1.25em;
+}
+
+.flip-card-back {
+  background-color: dodgerblue;
+  border-radius: var(--card-border-radius);
+  color: white;
+  font-size: 1.25em;
+  transform: rotateX(180deg);
+}
+
+.flipped .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+/* Buttons */
+.buttons{
+  margin: 10px 5px 0px 5px;
+  width: 120px;
+  height: 40px;
+  border-radius: 25px;
+  background-color:rgb(64, 0, 255); 
+  font-size: 1.25em;
+  font-weight: 600;
+  color: rgb(255,255,255);
+}
+
+.buttons:hover{
+  cursor:pointer;
+  background-color: rgb(38, 0, 150);
+  box-shadow: 0 0 10px 0px rgb(23, 0, 123);
+}
+
+.buttons.show-answer{
+  font-size: .95em;
+}

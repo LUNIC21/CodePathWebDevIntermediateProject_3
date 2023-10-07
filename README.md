@@ -31,10 +31,10 @@ One of the questions has checkboxes users can choose from. However, I was not ab
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/nd7TsDb.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with screentogif
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -43,10 +43,11 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+useEffect, useState and lifting state to parent class are still hard to understand. I wasn't able to implement things I wanted to because the concept and the notations/syntax were a bit hard to udnerstand.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Jiseob Lee]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
